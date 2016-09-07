@@ -1,7 +1,6 @@
 body {
-    padding: 10em;
     text-align: center;
-    background-color: gray;
+    padding: 10em;
 }
 
 .led {
@@ -10,12 +9,4 @@ body {
     margin: 0.1em;
     border-radius: 50%;
     display: inline-block;
-}
-
-.off {
-    background-color: white;
-}
-
-.on {
-    background-color: red;
 }
