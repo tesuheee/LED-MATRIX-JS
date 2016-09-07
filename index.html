@@ -4,11 +4,98 @@
 <head>
     <meta charset="utf-8">
     <title>LEDMATRIX</title>
-    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
-    
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <br />
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+    <div class="led off"> </div>
+
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+        $('.led').click(function() {
+            if ($(this).hasClass('off')) {
+                $(this).removeClass('off');
+                $(this).addClass('on');
+            } else if ($(this).hasClass('on')) {
+                $(this).removeClass('on');
+                $(this).addClass('off');
+            }
+        });
+    });
+
+    </script>
+
 </body>
 
 </html>
