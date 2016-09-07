@@ -1,11 +1,11 @@
 body {
     text-align: center;
-    padding: 10em;
+    padding: 5em;
 }
 
 .led {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin: 0.1em;
     border-radius: 50%;
     display: inline-block;
