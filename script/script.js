@@ -1,14 +1,12 @@
 $(function() {
     $('.led').click(function() {
         var $led = $(this);
-        if ($led.hasClass('off')) {
-            $led.toggleClass('off');
+        if ($led.hasClass('on')) {
             $led.toggleClass('on');
-            $led.attr('src', 'image/leda.png');
-        } else if ($led.hasClass('on')) {
+            $led.css('background', 'url("image/ledb.png")');
+        } else {
             $led.toggleClass('on');
-            $led.toggleClass('off');
-            $led.attr('src', 'image/ledb.png');
+            $led.css('background', 'url("image/leda.png")');
         }
     });
 });
