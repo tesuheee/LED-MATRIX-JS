@@ -4,10 +4,10 @@ body {
 }
 
 .led {
-    width: 70px;
-    height: 70px;
+    width: 76px;
+    height: 78px;
     margin: 0.1em;
     border-radius: 50%;
     display: inline-block;
-    background: url("image/ledb.png");
+    background: url("image/led_off.png");
 }

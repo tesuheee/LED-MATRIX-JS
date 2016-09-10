@@ -3,10 +3,10 @@ $(function() {
         var $led = $(this);
         if ($led.hasClass('on')) {
             $led.toggleClass('on');
-            $led.css('background', 'url("image/ledb.png")');
+            $led.css('background', 'url("image/led_off.png")');
         } else {
             $led.toggleClass('on');
-            $led.css('background', 'url("image/leda.png")');
+            $led.css('background', 'url("image/led_on.png")');
         }
     });
 });
