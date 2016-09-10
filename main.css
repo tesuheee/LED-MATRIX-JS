@@ -9,5 +9,12 @@ body {
     margin: 0.1em;
     border-radius: 50%;
     display: inline-block;
+}
+
+.on {
+    background: url("image/led_on.png");
+}
+
+.off {
     background: url("image/led_off.png");
 }
