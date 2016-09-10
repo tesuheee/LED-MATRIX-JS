@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    white-space: nowrap;
 }
 
 .matrix {
@@ -27,7 +28,7 @@ body {
     display: inline-block;
     margin: 0 auto 1em;
     font-size: 2em;
-    width: 23em;
+    width: 25em;
     height: 1.5em;
     border: dotted 3px #AAA;
     line-height: 150%;
