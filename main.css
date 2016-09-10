@@ -23,10 +23,23 @@ body {
 }
 
 #pat {
-    margin: 1em auto;
+    display: inline-block;
+    margin: 0 auto 1em;
     font-size: 2em;
     width: 25em;
     height: 1.5em;
     border: dotted 3px #AAA;
     line-height: 150%;
+}
+
+#operation div div {
+    line-height: 150%;
+}
+
+#operation div.after {
+    line-height: 75%;
+}
+
+.after {
+    font-size: 2em;
 }

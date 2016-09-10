@@ -6,43 +6,55 @@ $(function() {
     $('.led').click(function() {
         var $led = $(this);
         if ($led.hasClass('on')) {
-            $led.toggleClass('on');
-            $led.toggleClass('off');
-            calc();
-            print();
+            toggle($led);
         } else if ($led.hasClass('off')) {
-            $led.toggleClass('on');
-            $led.toggleClass('off');
-            calc();
-            print();
+            toggle($led);
         }
     });
 
+    $('#reset').click(function() {
+        $('.led').removeClass('on');
+        $('.led').addClass('off');
+        process();
+    });
+
+    $('#reverse').click(function() {
+        $('.led').toggleClass('on');
+        $('.led').toggleClass('off');
+        process();
+    });
+
+    function process() {
+        calc();
+        dec2hex();
+        print();
+    }
+
+    function toggle($led) {
+        $led.toggleClass('on');
+        $led.toggleClass('off');
+        process();
+    }
+
     function calc() {
-        // 初期化
+        var $led = $('.led');
+        var num = 0;
+        var array = [];
+        for (var i = 0; i < 8; i++) {
+            array[i] = [];
+        }
+
         for (var i = 0; i < pat.length; i++) {
             pat[i] = 0;
         }
-        // 2次元配列にマトリクスの結果を代入
-        var $led = $('.led');
-        var num = 0;
-        var array = [
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-        ];
+
         for (var i = 0; i < 8; i++) {
             for (var j = 0; j < 8; j++) {
                 array[i][j] = $led[num];
                 num++;
             }
         }
-        // 配列patに各行の計算結果を代入
+
         var k = 128;
         for (var i = 0; i < 8; i++) {
             for (var j = 0; j < 8; j++, k /= 2) {
@@ -54,7 +66,19 @@ $(function() {
         }
     }
 
+    function dec2hex() {
+        for (var i = 0; i < pat.length; i++) {
+            pat[i] = "0x" + pat[i].toString(16);
+        }
+    }
+
     function print() {
-        $('#pat').text("int pat[8] = { " + pat[0] + ", " + pat[1] + ", " + pat[2] + ", " + pat[3] + ", " + pat[4] + ", " + pat[5] + ", " + pat[6] + ", " + pat[7] + " };")
+        var text = "{ "
+        for (var i = 0; i < pat.length; i++) {
+            text = text + pat[i];
+            if (i !== 7) text = text + ", ";
+        }
+        text = text + " };"
+        $('#pat').text(text)
     }
 });

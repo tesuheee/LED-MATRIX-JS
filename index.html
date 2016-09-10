@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>LEDMATRIX</title>
+    <title>LED-MATRIX</title>
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="button.css" media="screen" title="no title" charset="utf-8">
     <link rel="shortcut icon" href="image/favicon.ico">
@@ -93,18 +93,18 @@
         </div>
     </div>
     
-    <p id="pat">int pat[8] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };</p>
+    <p id="pat">{ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };</p>
     
-    <!-- <div id="operation">
-        <div class="button_base b08_3d_pushback">
+    <div id="operation">
+        <div id="reset" class="button_base b08_3d_pushback">
             <div>reset</div>
-            <div>reset</div>
+            <div class="after">reset</div>
         </div>
-        <div class="button_base b08_3d_pushback">
-            <div>before</div>
-            <div>after</div>
+        <div id="reverse" class="button_base b08_3d_pushback">
+            <div>reverse</div>
+            <div class="after">reverse</div>
         </div>
-    </div> -->
+    </div>
 
     <script src="script/jquery-3.1.0.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="script/script.js"></script>
