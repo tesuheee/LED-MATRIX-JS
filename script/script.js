@@ -1,4 +1,7 @@
 $(function() {
+    jQuery.preloadImages = function() {
+        jQuery("<img>").attr("src", "image/led_on.jpg");
+    };
     var pat = [0, 0, 0, 0, 0, 0, 0, 0];
 
     $('.led').addClass('off');
