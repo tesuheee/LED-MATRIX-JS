@@ -18,6 +18,12 @@ $(function() {
         process();
     });
 
+    $('#copy').click(function() {
+        $('#pat').select();
+        document.execCommand("copy");
+        document.selection.empty();
+    });
+
     $('#reverse').click(function() {
         $('.led').toggleClass('on');
         $('.led').toggleClass('off');
@@ -79,6 +85,6 @@ $(function() {
             if (i !== 7) text = text + ", ";
         }
         text = text + " };"
-        $('#pat').text(text)
+        $('#pat').val(text);
     }
 });

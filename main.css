@@ -6,6 +6,7 @@ body {
 .matrix {
     margin: 2em;
 }
+
 .led {
     width: 76px;
     height: 78px;
@@ -23,10 +24,11 @@ body {
 }
 
 #pat {
+    text-align: center;
     display: inline-block;
     margin: 0 auto 1em;
     font-size: 2em;
-    width: 25em;
+    width: 23em;
     height: 1.5em;
     border: dotted 3px #AAA;
     line-height: 150%;

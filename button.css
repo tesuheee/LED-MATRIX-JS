@@ -1,5 +1,4 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto+Condensed');
-
 .preserve-3d {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -18,7 +17,7 @@ body {
 
 .button_base {
     display: inline-block;
-    margin: auto 3em;
+    margin: auto 1em;
     font-size: 18px;
     width: 200px;
     height: 50px;
@@ -34,7 +33,9 @@ body {
     cursor: pointer;
 }
 
+
 /* ### ### ### 08 */
+
 .b08_3d_pushback {
     perspective: 500px;
     -webkit-perspective: 500px;
