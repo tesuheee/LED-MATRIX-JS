@@ -3,6 +3,9 @@ body {
     padding: 5em;
 }
 
+.matrix {
+    margin: 2em;
+}
 .led {
     width: 76px;
     height: 78px;
@@ -17,4 +20,13 @@ body {
 
 .off {
     background: url("image/led_off.png");
+}
+
+#pat {
+    margin: 1em auto;
+    font-size: 2em;
+    width: 25em;
+    height: 1.5em;
+    border: dotted 3px #AAA;
+    line-height: 150%;
 }
