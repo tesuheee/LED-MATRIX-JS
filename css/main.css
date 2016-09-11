@@ -16,11 +16,11 @@ body {
 }
 
 .on {
-    background: url("image/led_on.png") no-repeat;
+    background: url("../image/led_on.png") no-repeat;
 }
 
 .off {
-    background: url("image/led_off.png") no-repeat;
+    background: url("../image/led_off.png") no-repeat;
 }
 
 #pat {
