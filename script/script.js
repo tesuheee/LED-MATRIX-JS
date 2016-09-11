@@ -24,7 +24,6 @@ $(function() {
         document.execCommand('selectAll',false,null);
         document.execCommand("copy");
         $('#pat').attr('contentEditable', false);
-        $('#pat').blur();
     });
 
     $('#reverse').click(function() {
