@@ -1,6 +1,5 @@
 $(function() {
     $("<img>").attr("src", "image/led_on.png");
-    var pat = [0, 0, 0, 0, 0, 0, 0, 0];
 
     $('.led').addClass('off');
 
@@ -20,9 +19,12 @@ $(function() {
     });
 
     $('#copy').click(function() {
-        $('#pat').select();
+        $('#pat').attr('contentEditable', true);
+        document.getElementById('pat').focus();
+        document.execCommand('selectAll',false,null);
         document.execCommand("copy");
-        document.selection.empty();
+        $('#pat').attr('contentEditable', false);
+        $('#pat').blur();
     });
 
     $('#reverse').click(function() {
@@ -31,17 +33,19 @@ $(function() {
         process();
     });
 
+    function toggle($led) {
+        $led.toggleClass('on');
+        $led.toggleClass('off');
+        process();
+    }
+
     function process() {
         calc();
         dec2hex();
         print();
     }
 
-    function toggle($led) {
-        $led.toggleClass('on');
-        $led.toggleClass('off');
-        process();
-    }
+    var pat = [0, 0, 0, 0, 0, 0, 0, 0];
 
     function calc() {
         var $led = $('.led');
@@ -51,7 +55,7 @@ $(function() {
             array[i] = [];
         }
 
-        for (var i = 0; i < pat.length; i++) {
+        for (var i = 0; i < 8; i++) {
             pat[i] = 0;
         }
 
@@ -74,18 +78,18 @@ $(function() {
     }
 
     function dec2hex() {
-        for (var i = 0; i < pat.length; i++) {
+        for (var i = 0; i < 8; i++) {
             pat[i] = "0x" + pat[i].toString(16);
         }
     }
 
     function print() {
         var text = "{ "
-        for (var i = 0; i < pat.length; i++) {
+        for (var i = 0; i < 8; i++) {
             text = text + pat[i];
             if (i !== 7) text = text + ", ";
         }
         text = text + " };"
-        $('#pat').val(text);
+        $('#pat').text(text);
     }
 });
