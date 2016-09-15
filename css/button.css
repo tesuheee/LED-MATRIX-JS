@@ -1,5 +1,4 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto+Condensed');
-
 .preserve-3d {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -47,6 +46,10 @@ body {
     }
 }
 
+#showdesc {
+    width: 680px;
+}
+
 .button_base {
     display: inline-block;
     margin: auto 1em;
@@ -65,7 +68,9 @@ body {
     cursor: pointer;
 }
 
+
 /* ### ### ### 01 */
+
 .b01_simple_rollover {
     color: #000000;
     border: #000000 solid 1px;
@@ -78,7 +83,9 @@ body {
     background-color: #000000;
 }
 
+
 /* ### ### ### 02 */
+
 .b02_slide_in {
     overflow: hidden;
     border: #000000 solid 1px;
@@ -130,7 +137,9 @@ body {
     -moz-transition: opacity 0.1s ease;
 }
 
+
 /* ### ### ### 03 */
+
 .b03_skewed_slide_in {
     overflow: hidden;
     border: #000000 solid 1px;
@@ -187,7 +196,9 @@ body {
     -moz-transition: left 0.30000000000000004s ease;
 }
 
+
 /* ### ### ### 04 */
+
 .b04_3d_tick {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -247,7 +258,9 @@ body {
     -moz-transform: rotateX(0deg);
 }
 
+
 /* ### ### ### 05 */
+
 .b05_3d_roll {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -315,7 +328,9 @@ body {
     -moz-transform: rotateX(-90deg);
 }
 
+
 /* ### ### ### 06 */
+
 .b06_3d_swap {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -386,7 +401,9 @@ body {
     -moz-transform: rotateX(0deg);
 }
 
+
 /* ### ### ### 07 */
+
 .b07_3d_double_roll {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -522,7 +539,9 @@ body {
     -moz-transform: rotateX(0deg);
 }
 
+
 /* ### ### ### 08 */
+
 .b08_3d_pushback {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -590,7 +609,9 @@ body {
     -moz-transform: rotateX(0deg) rotateY(0deg) translateZ(1px);
 }
 
+
 /* ### ### ### 09 */
+
 .b09_electric {
     color: #000000;
     background-color: #ffffff;
@@ -613,8 +634,7 @@ body {
 }
 
 @-webkit-keyframes b09_electric_blinkIn {
-    from,
-    to {
+    from, to {
         background-color: #f8f8f8;
         color: #080808;
     }
@@ -625,8 +645,7 @@ body {
 }
 
 @-moz-keyframes b09_electric_blinkIn {
-    from,
-    to {
+    from, to {
         background-color: #f8f8f8;
         color: #080808;
     }
@@ -636,8 +655,12 @@ body {
     }
 }
 
+
 /* ### ### ### 10 */
+
+
 /* ### ### ### 10 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### */
+
 .b10_tveffect div {
     position: absolute;
     text-align: center;
@@ -720,8 +743,7 @@ body {
 }
 
 @-webkit-keyframes b10_tveffect_red {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -739,8 +761,7 @@ body {
 }
 
 @-webkit-keyframes b10_tveffect_green {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -758,8 +779,7 @@ body {
 }
 
 @-webkit-keyframes b10_tveffect_blue {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -777,8 +797,7 @@ body {
 }
 
 @-moz-keyframes b10_tveffect_red {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -796,8 +815,7 @@ body {
 }
 
 @-moz-keyframes b10_tveffect_green {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -815,8 +833,7 @@ body {
 }
 
 @-moz-keyframes b10_tveffect_blue {
-    from,
-    to {
+    from, to {
         opacity: 0;
     }
     25% {
@@ -833,7 +850,9 @@ body {
     }
 }
 
+
 /* ### ### ### 11 */
+
 .b11_3d_jumpback {
     perspective: 500px;
     -webkit-perspective: 500px;
@@ -926,7 +945,9 @@ body {
     }
 }
 
+
 /* ### ### ### 12 */
+
 .b12_3d_glitch {
     overflow: hidden;
     width: 200px;

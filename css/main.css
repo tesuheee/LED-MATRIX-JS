@@ -4,7 +4,7 @@ body {
 }
 
 .matrix {
-    margin: 2em;
+    margin: 1.5em 0;
 }
 
 .led {
@@ -26,22 +26,32 @@ body {
 #pat {
     text-align: center;
     display: inline-block;
-    margin: 0 auto 1em;
+    margin: 0 auto;
     font-size: 2em;
-    width: 25em;
-    height: 1.5em;
+    width: 20em;
+    padding: 0.5em;
     border: dotted 3px #AAA;
+}
+
+.operation {
+    margin: 1.5em auto;
+}
+
+.operation div div {
     line-height: 150%;
 }
 
-#operation div div {
-    line-height: 150%;
-}
-
-#operation div.after {
+.operation div.after {
     line-height: 75%;
 }
 
 .after {
     font-size: 2em;
+}
+
+#description {
+    display: none;
+    margin: 1em auto;
+    width: 700px;
+    height: auto;
 }

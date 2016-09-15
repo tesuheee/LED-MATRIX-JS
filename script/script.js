@@ -21,7 +21,7 @@ $(function() {
     $('#copy').click(function() {
         $('#pat').attr('contentEditable', true);
         document.getElementById('pat').focus();
-        document.execCommand('selectAll',false,null);
+        document.execCommand('selectAll', false, null);
         document.execCommand("copy");
         $('#pat').attr('contentEditable', false);
     });
@@ -30,6 +30,20 @@ $(function() {
         $('.led').toggleClass('on');
         $('.led').toggleClass('off');
         process();
+    });
+
+    $('#showdesc').click(function() {
+        if (!$('#description').is(':visible')) {
+            $('#description').fadeIn(1000).css('display','block');
+            $("html,body").animate({
+                scrollTop: $('#description').offset().top
+            }, 1000);
+        } else {
+            $('#description').fadeOut(1000);
+            $("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        }
     });
 
     function toggle($led) {
