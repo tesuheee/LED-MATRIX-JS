@@ -1,7 +1,7 @@
 $(function() {
     $("<img>").attr("src", "image/led_on.png");
-
     $('.led').addClass('off');
+    $('#pat').text("{ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };");
 
     $('.led').click(function() {
         var $led = $(this);
