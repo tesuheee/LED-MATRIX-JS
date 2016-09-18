@@ -20,6 +20,10 @@ body {
     cursor: pointer;
 }
 
+.led:hover:not(.on) {
+    background-color: rgb(255, 200, 200);
+}
+
 .on {
     background-color: rgb(255, 45, 45);
 }
