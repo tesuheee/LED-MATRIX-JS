@@ -4,7 +4,11 @@ body {
 }
 
 .matrix {
-    margin: 1.5em 0;
+    margin: 1.5em auto;
+    padding-top: 1em;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(50, 50, 50);
 }
 
 .led {
@@ -16,11 +20,11 @@ body {
 }
 
 .on {
-    background: url("../image/led_on.png") no-repeat;
+    background-color: rgb(255, 60, 60);
 }
 
 .off {
-    background: url("../image/led_off.png") no-repeat;
+    background-color: white;
 }
 
 #pat {
@@ -34,7 +38,7 @@ body {
 }
 
 .operation {
-    margin: 1.5em auto;
+    margin: 0.8em auto;
 }
 
 .operation div div {
