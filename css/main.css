@@ -17,14 +17,15 @@ body {
     margin: 0.1em;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 
 .on {
-    background-color: rgb(255, 60, 60);
+    background-color: rgb(255, 45, 45);
 }
 
 .off {
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 #pat {
