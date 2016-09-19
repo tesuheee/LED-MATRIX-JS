@@ -1,6 +1,7 @@
 body {
     text-align: center;
     white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .matrix {
